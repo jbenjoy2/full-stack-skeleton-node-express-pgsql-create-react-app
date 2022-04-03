@@ -4,6 +4,11 @@ const { ExpressError } = require("./expressError");
 const app = express();
 app.use(express.json());
 
+// PLACEHOLDER- REPLACE WITH BASE ROUTE
+app.get("/", (req, res, next) => {
+  res.json("hello world");
+});
+// not found handler
 app.use((req, res, next) => {
   const err = new ExpressError("Not found", 404);
   return next(err);
