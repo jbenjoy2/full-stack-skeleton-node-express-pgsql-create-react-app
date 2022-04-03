@@ -13,4 +13,4 @@ let dbName; //set with desired name of database for project
 // });
 // db.connect();
 
-module.exports = db;
+module.exports = db; //will be imported in models to interact with database from within class methods
