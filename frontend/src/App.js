@@ -1,7 +1,8 @@
 import React from "react";
+import Routes from "routes/routes";
 
 function App() {
-  return <div className="App">START EDITING IN frontend/src/app.js</div>;
+  return <Routes />;
 }
 
 export default App;
